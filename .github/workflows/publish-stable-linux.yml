@@ -30,7 +30,7 @@ jobs:
       SHOULD_BUILD: ${{ env.SHOULD_BUILD }}
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           ref: ${{ env.GITHUB_BRANCH }}
           persist-credentials: false
@@ -60,7 +60,7 @@ jobs:
       BUILD_SOURCEVERSION: ${{ env.BUILD_SOURCEVERSION }}
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           ref: ${{ env.GITHUB_BRANCH }}
           persist-credentials: false
@@ -167,7 +167,7 @@ jobs:
       SHOULD_BUILD: ${{ env.SHOULD_BUILD }}
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           ref: ${{ env.GITHUB_BRANCH }}
           persist-credentials: false
@@ -274,7 +274,7 @@ jobs:
     if: needs.check.outputs.SHOULD_BUILD == 'yes'
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           ref: ${{ env.GITHUB_BRANCH }}
           persist-credentials: false
@@ -364,7 +364,7 @@ jobs:
     if: needs.check.outputs.SHOULD_BUILD == 'yes'
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           ref: ${{ env.GITHUB_BRANCH }}
           persist-credentials: false
@@ -457,7 +457,7 @@ jobs:
     if: needs.check.outputs.SHOULD_BUILD_SNAP != 'no' && vars.DISABLE_STABLE_SNAP != 'yes'
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           ref: ${{ env.GITHUB_BRANCH }}
           persist-credentials: false
