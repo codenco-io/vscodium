@@ -96,7 +96,7 @@ if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
   setpath "product" "win32ContextMenu.arm64.clsid" "7544C31C-BDBF-4DDF-B15E-F73A46D6723D"
 else
   setpath "product" "nameShort" "CodeNCo Studio"
-  setpath "product" "nameLong" "CodeN'Co Studio"
+  setpath "product" "nameLong" "CodeNCo Studio"
   setpath "product" "applicationName" "codium"
   setpath "product" "linuxIconName" "vscodium"
   setpath "product" "quality" "stable"
